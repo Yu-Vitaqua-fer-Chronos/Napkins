@@ -13,7 +13,7 @@ var v1_19_3 = parseJson(readFile(protocolJsonFolder / "1-19-3.json"))
 type
   Buffer* = distinct seq[byte] ## Purely to help tell the difference between different things in the packet handling
 
-  NBT* = object # TODO: Implement this in a separate library, a library exists but our own is likely better
+  NBT* = object # TODO: Implement this in a separate library, a library exists but our own impl would likely be better
 
   Rotation* = object
     x*, y*, z*: float32
